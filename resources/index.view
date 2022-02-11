@@ -1,0 +1,150 @@
+<svg class="background">
+    <image x="0" y="0" height="180" width="100%" href="img/separator_hidden.png" />
+    <svg x="0" y="0" height="180" width="100%" id="clock-24h" class="clock">
+        <image id="dh-24" x="5" width="78" href="img/24h/not-found.png" />
+        <image id="uh-24" x="83" width="78" href="img/24h/not-found.png" />
+        <image x="161" width="16" class="separator" href="img/separator.png" />
+        <image id="dm-24" x="177" width="78" href="img/24h/not-found.png" />
+        <image id="um-24" x="255" width="78" href="img/24h/not-found.png" />
+    </svg>
+    <svg x="0" y="0" height="180" width="100%" id="clock-12h" class="clock">
+        <image id="dh-12" x="5" width="69" href="img/12h/not-found.png" />
+        <image id="uh-12" x="74" width="69" href="img/12h/not-found.png" />
+        <image x="143" width="16" class="separator" href="img/separator.png" />
+        <image id="dm-12" x="159" width="69" href="img/12h/not-found.png" />
+        <image id="um-12" x="228" width="69" href="img/12h/not-found.png" />
+        <image id="am-pm" x="297" width="36" href="img/12h/AM.png" />
+    </svg>
+    <svg x="0" y="162" width="100%">
+        <use x="168" y="0" href="#fitfont" id="date">
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+            <use href="#fitfont-char"/>
+        </use>
+    </svg>
+    <section x="0" y="191" height="50%" width="100%" class="widgets">
+        <svg x="0" y="0" height="100%" width="34%">
+            <defs>
+                <symbol id="left-arm">
+                    <g>
+                        <image height="19" width="20" href="img/omino_braccio_sx.png" />
+                        <animateTransform class="omino-animation" attributeType="rotate" begin="enable" final="keep" repeatCount="0" from="0" to="94" dur="0.4" />
+                        <animateTransform class="omino-animation" attributeType="rotate" begin="enable+0.5" final="keep" repeatCount="0" from="94" to="0" dur="0.4" />
+                    </g>
+                </symbol>
+                <symbol id="right-arm">
+                    <g pointer-events="visible" transform="translate(100%,0%)">
+                        <image x="-100%" height="19" width="20" href="img/omino_braccio_dx.png" />
+                        <animateTransform class="omino-animation" attributeType="rotate" begin="enable" final="keep" repeatCount="0" from="0" to="-94" dur="0.4" />
+                        <animateTransform class="omino-animation" attributeType="rotate" begin="enable+0.5" final="keep" repeatCount="0" from="-94" to="0" dur="0.4" />
+                    </g>
+                </symbol>
+                <symbol id="left-leg">
+                    <g pointer-events="visible" transform="translate(100%,0%)">
+                        <image x="-100%" height="34" width="18" href="img/omino_gamba_sx.png" />
+                        <animateTransform class="omino-animation" attributeType="rotate" begin="enable" final="keep" repeatCount="0" from="0" to="-68" dur="0.4" />
+                        <animateTransform class="omino-animation" attributeType="translate" begin="enable" final="keep" repeatCount="0" from="100%,0%" to="100%-9,0%" dur="0.4" />
+                        
+                        <animateTransform class="omino-animation" attributeType="rotate" begin="enable+0.5" final="keep" repeatCount="0" from="-68" to="0" dur="0.4" />
+                        <animateTransform class="omino-animation" attributeType="translate" begin="enable+0.5" final="keep" repeatCount="0" from="100%-9,0%" to="100%,0%" dur="0.4" />
+                    </g>
+                </symbol>
+                <symbol id="right-leg">
+                    <g>
+                        <image height="27" width="26" href="img/omino_gamba_dx.png" />
+                        <animateTransform class="omino-animation" attributeType="rotate" begin="enable" final="keep" repeatCount="0" from="0" to="68" dur="0.4" />
+                        <animateTransform class="omino-animation" attributeType="translate" begin="enable" final="keep" repeatCount="0" from="0%,0%" to="0%+9,0%" dur="0.4" />
+                        
+                        <animateTransform class="omino-animation" attributeType="rotate" begin="enable+0.5" final="keep" repeatCount="0" from="68" to="0" dur="0.4" />
+                        <animateTransform class="omino-animation" attributeType="translate" begin="enable+0.5" final="keep" repeatCount="0" from="0%+9,0%" to="0%,0%" dur="0.4" />
+                    </g>
+                </symbol>
+            </defs>
+            
+            <image x="50%-45" y="0" height="90" width="90" href="img/omino_corpo.png" id="omino-body" />
+            <svg x="50%-3" y="25" height="19" width="20">
+                <use id="omino-arm-left" href="#left-arm" width="100%" height="100%" />
+            </svg>
+            <svg x="50%-23" y="25" height="19" width="20">
+                <use id="omino-arm-right" href="#right-arm" width="100%" height="100%" />
+            </svg>
+            <svg x="50%-10" y="44" height="34" width="18">
+                <use id="omino-leg-left" href="#left-leg" width="100%" height="100%" />
+            </svg>
+            <svg x="50%-1" y="44" height="27" width="26">
+                <use id="omino-leg-right" href="#right-leg" width="100%" height="100%" />
+            </svg>
+            <use x="50%" y="110" fill="yellow" href="#fitfont" id="steps-counter">
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+            </use>
+        </svg>
+        <mask id="mask">
+            <rect id="battery-level-mask" x="0" y="0" width="100%" height="30%" />
+        </mask>
+        <svg x="34%" y="0" height="100%" width="33%">
+            <svg x="10" y="0" height="90" width="90" id="battery-level-svg" mask="#mask">
+                <image x="0" y="0" height="90" width="90" href="img/battery_full.png" id="battery-logo-full" />
+            </svg>
+            <image x="10" y="0" height="90" width="90" href="img/battery_empty.png" fill="white" />
+            <image x="10" y="0" height="90" width="90" href="img/battery_charging.png" fill="white" id="battery-logo-charging" />
+                
+            <use x="50%" y="110" fill="green" href="#fitfont" id="battery-level">
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+            </use>
+        </svg>
+        <svg x="67%" y="0" height="100%" width="33%">
+            <image x="10" y="0" height="90" width="90" href="img/heart.png" id="heart-rate-logo">
+                <animate class="heart-rate-animation" attributeName="height" begin="load" final="restore" repeatCount="indefinite" from="90" to="80" dur="0.3" />
+                <animate class="heart-rate-animation" attributeName="width" begin="load" final="restore" repeatCount="indefinite" from="90" to="80" dur="0.3" />
+                <animate class="heart-rate-animation" attributeName="x" begin="load" final="restore" repeatCount="indefinite" from="10" to="15" dur="0.3" />
+                <animate class="heart-rate-animation" attributeName="y" begin="load" final="restore" repeatCount="indefinite" from="0" to="5" dur="0.3" />
+            </image>
+            <use x="50%" y="110" fill="red" href="#fitfont" id="heart-rate">
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+                <use href="#fitfont-char"/>
+            </use>
+        </svg>
+    </section>
+</svg>
